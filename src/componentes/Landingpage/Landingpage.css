@@ -1,0 +1,26 @@
+.swiper-container {
+     width: 100%;
+     height: 100%;
+     margin-left: auto;
+     margin-right: auto;
+   }
+   
+   .swiper-slide {
+     max-width: 1200px;
+     height: auto;
+     text-align: center;
+     line-height: 0;
+    
+   }
+   
+   .swiper-slide img {
+     /* height: 200px; */
+     width: 400px;
+     /* border: 10px solid white;
+     border-radius: 5px; */
+   }
+   
+   .swiper-slide:nth-child(1n) {
+     /* height: 550px; */
+     width: auto;
+   }
