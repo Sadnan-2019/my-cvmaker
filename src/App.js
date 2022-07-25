@@ -3,7 +3,7 @@ import './App.css';
 import Header from './componentes/Header/Header';
 import Landingpage from './componentes/Landingpage/Landingpage';
 import Footer from './componentes/Footer/Footer';
-import Allarticale from './componentes/Allarticale';
+import Allarticale from './componentes/Allarticale/Allarticale';
 
 function App() {
   return (
