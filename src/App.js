@@ -6,6 +6,7 @@ import Footer from './componentes/Footer/Footer';
 import Allarticale from './componentes/Allarticale/Allarticale';
 import Steps from './componentes/Steps/Steps';
 import Banner from './componentes/Banner/Banner';
+import Price from './componentes/Price/Price';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     {/* <Allarticale></Allarticale> */}
     <Banner></Banner>
     <Steps></Steps>
+    <Price></Price>
     <Footer></Footer>
     </div>
   );
