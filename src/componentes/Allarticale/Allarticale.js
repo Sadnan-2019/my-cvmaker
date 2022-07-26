@@ -153,7 +153,7 @@ const Allarticale = () => {
         </div>
         <div>
           <img
-            className="rounded"
+            className="rounded "
             src="https://cdn-blog.novoresume.com/articles/how-to-network-in-college/bg-mid.png"
             alt=""
           />

@@ -65,7 +65,12 @@ const Landingpage = () => {
               />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              {/* <img src="https://swiperjs.com/demos/images/nature-2.jpg" /> */}
+              <img
+                src="https://cdn-blog.novoresume.com/articles/welder-resume/bg-mid.png"
+                alt=""
+                className=" "
+              />
             </SwiperSlide>
             <SwiperSlide>
               <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
