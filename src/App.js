@@ -7,6 +7,7 @@ import Allarticale from './componentes/Allarticale/Allarticale';
 import Steps from './componentes/Steps/Steps';
 import Banner from './componentes/Banner/Banner';
 import Price from './componentes/Price/Price';
+import Guarantee from './componentes/Guarantee/Guarantee';
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
     <Header></Header>
     <Landingpage></Landingpage>
     {/* <Allarticale></Allarticale> */}
-    <Banner></Banner>
+    {/* <Banner></Banner> */}
     <Steps></Steps>
     <Price></Price>
+    <Guarantee></Guarantee>
     <Footer></Footer>
     </div>
   );

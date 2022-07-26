@@ -11,7 +11,7 @@ const Price = () => {
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content text-center  ">
        <div className="grid    sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3  gap-14 px-12 py-8">
-       <div class="card w-96 bg-base-100 shadow-xl">
+       <div class="card lg:max-w-lg  bg-base-100 shadow-xl">
           <div class="card-body items-center text-center">
             <h2 class="card-title text-2xl text-blue-900">Essential</h2>
             <p>Get a resume, Linkedin revamp and cover letter, while you do the job search, interview prep, and negotiation.</p>
@@ -22,7 +22,7 @@ const Price = () => {
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl"  >
+        <div class="card lg:max-w-lg bg-base-100 shadow-xl"  >
           <div class="card-body items-center text-center">
             <h2 class="card-title text-2xl text-green-700">Executive</h2>
             <p>Get a resume, Linkedin revamp and cover letter, while you do the job search, interview prep, and negotiation.</p>
@@ -33,7 +33,7 @@ const Price = () => {
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card lg:max-w-lg  bg-base-100 shadow-xl">
           <div class="card-body items-center text-center">
             <h2 class="card-title text-2xl text-red-900">Executive +</h2>
             <p>Get a resume, Linkedin revamp and cover letter, while you do the job search, interview prep, and negotiation.</p>
