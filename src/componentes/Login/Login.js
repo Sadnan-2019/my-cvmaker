@@ -31,9 +31,9 @@ const Login = () => {
                 <div class="form-control mt-6">
                   <button class="btn btn-primary">Login</button>
                 </div>
-                <p>For new Account ? Please clik
+                <p>For new Account ? Please clcik
 
-                  <Link to="/register"></Link>
+                  <Link to="/register" className='  btn btn-link text-primary'>Register</Link>
                 </p>
               </div>
             </div>
