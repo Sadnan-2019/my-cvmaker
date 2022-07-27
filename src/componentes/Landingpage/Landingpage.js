@@ -20,7 +20,8 @@ const Landingpage = () => {
       <div class=" "></div>
       {/* <div class="hero-content text-center text-neutral-content"> */}
       <div className="grid    sm:grid-cols-1  md:grid-cols-2      text-neutral-content   px-4 py-32    ">
-        <div className="max-w-xl mx-auto my-auto ">
+        <div className="max-w-xl mx-auto my-auto " data-aos="fade-up"
+            data-aos-duration="1000">
           <h1 className=" text-3xl 	md:text-5xl  font-extrabold p-5 mt-10">
             Build your body
             <span class="font-extrabold text-warning ">
