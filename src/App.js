@@ -8,17 +8,27 @@ import Steps from './componentes/Steps/Steps';
 import Banner from './componentes/Banner/Banner';
 import Price from './componentes/Price/Price';
 import Guarantee from './componentes/Guarantee/Guarantee';
+import { Route, Routes } from "react-router-dom";
+import Login from './componentes/Login/Login';
+import CvWriting from './componentes/CvWriting/CvWriting';
+import Home from './componentes/Home/Home';
+
 
 function App() {
   return (
     <div className="">
     <Header></Header>
-    <Landingpage></Landingpage>
+
+
+    <Routes>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path='/login' element={<Login/>}> </Route>
+      <Route path='/cv-writing' element={<CvWriting/>}> </Route>
+    </Routes>
+ 
     {/* <Allarticale></Allarticale> */}
     {/* <Banner></Banner> */}
-    <Steps></Steps>
-    {/* <Price></Price> */}
-    <Guarantee></Guarantee>
+   
     <Footer></Footer>
     </div>
   );
