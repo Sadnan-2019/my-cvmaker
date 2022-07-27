@@ -17,7 +17,7 @@ function App() {
     {/* <Allarticale></Allarticale> */}
     {/* <Banner></Banner> */}
     <Steps></Steps>
-    <Price></Price>
+    {/* <Price></Price> */}
     <Guarantee></Guarantee>
     <Footer></Footer>
     </div>

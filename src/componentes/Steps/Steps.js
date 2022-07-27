@@ -6,7 +6,7 @@ const Steps = () => {
       <h1 className="text-3xl font-extrabold text-center py-4">Steps</h1>
 
       <div className="grid    sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 m  gap-14 px-12 py-8    ">
-      <div class="card lg:max-w-lg bg-base-100  ">
+      <div class="card lg:max-w-lg bg-base-100 mb-12 ">
           <figure class="px-10 pt-10">
             <img
               src="https://enhancv.com/static/2e9bd59e7d750b2147a7dc53250e724f/46ef0/next-steps-1.png"
@@ -32,7 +32,7 @@ const Steps = () => {
             </div>
           </div>
         </div>
-        <div class="card lg:max-w-lg bg-base-100  ">
+        <div class="card lg:max-w-lg bg-base-100 mb-12 ">
           <figure class="px-10 pt-10">
             <img
               src="https://enhancv.com/static/c36e4ab54069e0f48cf19b874bdb0a0a/e0c5e/next-steps-3.png"
@@ -58,7 +58,7 @@ const Steps = () => {
             </div>
           </div>
         </div>
-        <div class="card lg:max-w-lg bg-base-100  ">
+        <div class="card lg:max-w-lg bg-base-100 mb-12 ">
           <figure class="px-10 pt-10">
             <img
               src="https://enhancv.com/static/d90d9b1ef48354f3ea10d9294b29db06/46ef0/next-steps-2.png"
