@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Landingpage></Landingpage>
-      <Allarticale></Allarticale>
+      {/* <Allarticale></Allarticale> */}
       <Steps></Steps>
       {/* <Price></Price> */}
       <Guarantee></Guarantee>
