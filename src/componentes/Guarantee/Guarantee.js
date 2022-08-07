@@ -7,10 +7,10 @@ const Guarantee = () => {
   return (
     <div className=" ">
       <div
-        class="     rounded relative mt-[200px]   "
-        style={{ background: "#374246", height: "600px" }}
+        class="     rounded relative mt-[200px] h-[500px] bg-[#374246]  "
+        
       >
-        <div className="bg-white shadow-xl border border-cyan-500 rounded-3xl max-w-4xl p-10   absolute mt-[-200px] lg:left-[290px]    ">
+        <div className="bg-white shadow-xl border border-cyan-500 rounded-3xl max-w-4xl p-10   absolute mt-[-180px] lg:left-[290px]    ">
           <div className="flex items-center justify-center gap-5">
             <div>
               <img
@@ -19,7 +19,7 @@ const Guarantee = () => {
                 alt=""
               />
             </div>
-            <p className="text-3xl text-center  ">The Enhancv Guarantee</p>
+            <p className="  text-2xl  lg:text-3xl text-center  ">The Enhancv Guarantee</p>
           </div>
           <p className="text-center text-3xl py-4">
             Confident and secured with Enhancv Career Counseling

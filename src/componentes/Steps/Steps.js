@@ -69,11 +69,11 @@ const Steps = () => {
           <div class="  card-body    ">
             <div className="flex items-center    ">
               <div>
-                <p className=" text-2xl text-center    mt-4     bg-indigo-300  h-20 w-20  rounded-full font-extrabold leading-[75px] ">
+                <p className=" text-2xl text-center    mt-5     bg-indigo-300  h-20 w-20  rounded-full font-extrabold leading-[75px] ">
                   3
                 </p>
               </div>
-              <div className=" ml-11 mt-4  ">
+              <div className=" ml-11 mt-5  ">
                 <h4 className="text-black text-2xl font-semibold ">
                   Choose package
                 </h4>
