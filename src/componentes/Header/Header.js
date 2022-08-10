@@ -19,7 +19,7 @@ const Header = () => {
         <Link to="/manage-todo">RESUME WRITING</Link>
       </li>
       <li>
-        <Link to="">Examples</Link>
+        <Link to="/profile">Examples</Link>
       </li>
     
       
