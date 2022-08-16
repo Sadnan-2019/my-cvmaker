@@ -10,6 +10,7 @@ import CvWriting from "./componentes/CvWriting/CvWriting";
 import Home from "./componentes/Home/Home";
 import Register from "./componentes/Register/Register";
 import Profile from "./componentes/Profile/Profile";
+import EditProfile from "./componentes/Profile/EditProfile";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           {" "}
         </Route>
         <Route path="/profile" element={<Profile />}>
+          {" "}
+        </Route>
+        <Route path="/edit-profile" element={<EditProfile />}>
           {" "}
         </Route>
       </Routes>
