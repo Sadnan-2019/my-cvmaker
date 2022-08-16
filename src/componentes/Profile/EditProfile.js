@@ -60,13 +60,13 @@ const EditProfile = () => {
     
   </div>
    
-  <div class="form-control  py-6   ">
+  <div class="form-control sm:float-left md:float-right lg:float-right  py-6   ">
    <input className='btn btn-primary m-1 md:w-32 rounded-3xl     ' type="submit" value="Save changes"/>
   </div>
 
  <div>
      <h1 className='text-1xl leading-10'>Password</h1>
- <div className='flex  sm:flex-col sm:w-full md:flex-row gap-3 lg:flex-row   justify-between items-center'>
+ <div className='flex  flex-col sm:w-full md:flex-row gap-3 lg:flex-row   justify-between items-center'>
      
      <div class="form-control ">
        {/* <label class="label">
@@ -90,7 +90,11 @@ const EditProfile = () => {
        <input  {...register("newpassword", { required: true,  })}
        type="text" placeholder="Retype password" name='newpassword' class="input input-bordered   rounded-3xl    " />
      </div>
+     
      </div>
+     <div class="form-control  py-6 sm:float-left md:float-right lg:float-right  ">
+   <input className='btn btn-primary m-1 md:w-44 rounded-3xl' type="submit" value="Changes password"/>
+  </div>
  </div>
    
   </form>
