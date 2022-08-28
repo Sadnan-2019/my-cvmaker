@@ -12,17 +12,14 @@ import "./Landingpage.css";
 const Landingpage = () => {
   return (
     <div
-      class="hero min-h-screen bg-cover  "
-      style={{
-        backgroundImage: `url("https://i.ibb.co/fNRnthP/image-05.jpg?fbclid=IwAR0b05P8XznbzEN5RpLz6oBsBdcob8TpI_xN7nyedIYDEB44eRYFCAcSK_o")`,
-      }}
+      
     >
       <div class=" "></div>
       {/* <div class="hero-content text-center text-neutral-content"> */}
       <div className="grid    sm:grid-cols-1  md:grid-cols-2      text-neutral-content   px-4 py-32    ">
         <div className="max-w-xl mx-auto my-auto " data-aos="fade-up"
             data-aos-duration="1000">
-          <h1 className=" text-3xl 	md:text-5xl  font-extrabold p-5 mt-10">
+          <h1 className=" text-3xl text-warning	md:text-5xl  font-extrabold p-5 mt-10">
             Build your body
             <span class="font-extrabold text-warning ">
               {" "}
