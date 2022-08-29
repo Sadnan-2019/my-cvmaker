@@ -1,23 +1,49 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword,useUpdateProfile } from 'react-firebase-hooks/auth';
+// import { useUpdateProfile } from 'react-firebase-hooks/auth';
+
+import Loading from '../Loading/Loading';
+
+
 import auth from "../../firebase.int";
 
 const Register = () => {
   const [signInWithGoogle, Guser, Gloading, Gerror] = useSignInWithGoogle(auth);
-  
+  const [updateProfile, updating, updatederror] = useUpdateProfile(auth);
+
+
+  const [
+    createUserWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useCreateUserWithEmailAndPassword(auth);
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
+  const navigate = useNavigate(); 
 
-  const onSubmit = (data) =>{
-    
+  let signInerror;
+ if(loading || Gloading || updating){
+    return <Loading></Loading>
+  }
+  if(error || Gerror || updatederror){
+    signInerror=<p className='text-red-500'>{ error.message || Gerror.message || updatederror.message }</p>
+  }
+
+
+  const onSubmit = async(data) =>{
+   await createUserWithEmailAndPassword(data.email, data.password);
+   await updateProfile({displayName:data.name})
     console.log(data)} 
+   
  
-  
+  navigate("/");
   
   ;
   if (Guser) {
@@ -128,7 +154,7 @@ const Register = () => {
                     </a>
                   </label>
                 </div>
-                
+                {signInerror}
                 <div class="form-control mt-6">
                   <input
                     className="btn btn-primary m-1"

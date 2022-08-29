@@ -1,9 +1,18 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 // import {Link} from "react-router-dom"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.int';
 
 
 const Header = () => {
+  const [user, loading, error] = useAuthState(auth);
+  const navigate = useNavigate()
+  const logout = () => {
+    signOut (auth);
+    navigate("/login")
+  };
 
   const liItems = (
     <>
@@ -51,10 +60,12 @@ const Header = () => {
   </div>
   <div class="navbar-end">
     {/* <a >Get started</a> */}
-   
-   <Link className="btn" to = "/login">
+    <span className=' font-1xl'>{user?.email}</span>
+  {user?  <button className='ml-2 btn btn-outline' onClick={logout}>Signout</button>: <Link className="btn" to = "/login">
       Login
-    </Link>
+    </Link>}
+   
+   
    
   </div>
 </div>
