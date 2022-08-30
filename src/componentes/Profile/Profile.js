@@ -1,7 +1,13 @@
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from 'react-router-dom';
+import auth from "../../firebase.int";
+
 
 const Profile = () => {
+  const [user, loading, error] = useAuthState(auth);
+  console.log(user)
+
   return (
     <div className=" py-10 ">
       <div className="card  shadow-2xl p-6   border-primary rounded-lg mx-10  ">
@@ -30,12 +36,13 @@ const Profile = () => {
           <div className=" mt-4  ">
             <p className=" font-semibold mb-2">Student ID:</p>
             <p className="text-xl mb-2">WEB5-3613</p>
-            <p className="font-semibold mb-2">Full Name:</p>
-            <p className="text-xl mb-2">Md Sadnan Hossain</p>
-            <p className="font-semibold">Full Name:</p>
+            <p className="font-semibold mb-2">Name:  {user?.displayName}</p>
+            <p className="text-xl mb-2">Email:{user?.email}</p>
+            {/* <p className="font-semibold">Full Name:</p>
             <p className="text-xl mb-2">Md Sadnan Hossain</p>
             <p className="font-semibold mb-2">Phone:</p>
-            <p className="text-xl mb-2">01892409715</p>
+            <p className="text-xl mb-2">01892409715</p> */}
+         
           </div>
         </div>
       </div>

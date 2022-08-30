@@ -63,40 +63,44 @@ const Header = () => {
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal p-0">{liItems}</ul>
       </div>
-      <div class="navbar-end">
-        {/* <a >Get started</a> */}
-        <span className=" font-1xl">{user?.email}</span>
-        {user ? (
-          <button className="ml-2 btn btn-outline" onClick={logout}>
-            Signout
-          </button>
-        ) : (
-          <Link className="btn" to="/login">
-            Login
-          </Link>
-        )}
-      </div>
-
+      <div class="navbar-end   ">
+     
+       
+        {user ? 
       <div class="dropdown dropdown-end">
-        <label tabindex="0" class=" ">
-          <div class="avatar">
-            <div class="w-12 rounded-full  ">
+        <label tabindex="0" class=" btn btn-ghost btn-circle avatar">
+           
+            <div class="w-10 rounded-full ">
               <img src="https://placeimg.com/192/192/people" />
             </div>
-          </div>
+          
         </label>
         <ul
           tabindex="0"
           class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4"
         >
           <li>
-            <a>Item 1</a>
+          <a className="text-xs	 ">{user?.email}</a>
           </li>
           <li>
-            <a>Item 2</a>
+            <Link to="/profile"><button className=" text-sm	 " >
+            Profile
+          </button></Link>
+          </li>
+          <li>
+            <a><button className=" text-sm	  " onClick={logout}>
+            Signout
+          </button></a>
+          
           </li>
         </ul>
+      </div> : (
+          <Link className="btn" to="/login">
+            Login
+          </Link>
+        )}
       </div>
+
     </div>
   );
 };
